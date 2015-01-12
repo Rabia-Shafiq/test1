@@ -1,0 +1,12 @@
+1. Create a repo with name 'test1' on github (Don't initialize with ReadMe)
+2. Create sub directory with same name on local
+3. mkdir test1
+4. cd test1
+4. git init
+5. git remote add origin https://github.com/RabizShafiq/test1.git ( add remote)
+copy any file to git and then runing 'git status' would tell that there is untracked file
+6. git status
+7. git add .
+8. git commit -m 'message'
+9. git push origin master
+---------------------------Another Way-------------------
