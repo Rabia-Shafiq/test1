@@ -4,9 +4,29 @@
 4. cd test1
 4. git init
 5. git remote add origin https://github.com/RabizShafiq/test1.git ( add remote)
-copy any file to git and then runing 'git status' would tell that there is untracked file
-6. git status
-7. git add .
+6. git add filename
 8. git commit -m 'message'
 9. git push origin master
----------------------------Another Way-------------------
+---------------------------IF get Error following error-------------------
+
+if get error: udates rejected because the remote contains work that you don't have locally.
+
+Then
+as we initialize ReadMe file on github repository and our local repo don't have this.
+Git guess that we are probably sync both local n remote repos. So we need to update our local repo.
+by using pull command which fetches remote repo to local repo.
+
+10. git pull origin master
+then again try
+11. git push origin master
+----------------------Another way --------------
+For avoiding above error another approach is cloning, first create github repo and initialize it with ReadMe.
+Then clone this repo on local machine
+
+git clone git@github.com:RabizShafiq/test1.git
+cloning automatically downloads remote repo to your local and creates subdirectory in your local directory
+cd test1
+git remote -v
+most imp our local repo and remote repo already to sync
+git add filename
+git push origin master
